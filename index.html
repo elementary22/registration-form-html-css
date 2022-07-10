@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./resourses/css/style.css">
+  <title>Registration Form</title>
+</head>
+<body>
+  <div class="registration-form">
+    <h1 id="title">Welcome to FLOOD CITY</h1>
+    <p id="description">Please fill the registration form below</p>
+    <form action="/" id="survey-form">
+      <fieldset>
+         <div class="container">
+            <label for="name"></label>
+            <input type="text" name="user-name" required placeholder="enter your name">
+         </div>
+          <div class="container">
+            <label for="email"></label>
+              <input type="email" name="user-email"  required placeholder="enter your e-mail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+          </div>
+          <div class="container">
+            <label for="password"></label>
+              <input type="password" name="password"  required placeholder="enter your password">
+          </div>
+          <div class="container">
+            <label for="password-confirm"></label>
+              <input type="password" name="password-confirm"  required placeholder="confirm your password">
+          </div>
+      </fieldset>
+
+      <input type="submit" name="submit" value="Submit">
+      <button name="cancel" value="cancel">Cancel</button>
+
+    </form>
+  </div>
+</body>
+</html>

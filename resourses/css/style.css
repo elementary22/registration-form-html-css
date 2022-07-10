@@ -1,0 +1,89 @@
+@font-face {
+  font-family: Ubuntu;
+  src: url(/resourses/fonts/UbuntuTitling-Bold.ttf);
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f8f2ea;
+  font-family: Ubuntu, serif;
+  font-size: 16px;
+  color: #f8f2ea;
+}
+
+.registration-form {
+  width: 400px; 
+  max-width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #34323d;
+  border-radius: 15px;
+  text-align: center;
+}
+
+input,  button{
+  width: 80%;
+  height: 1.75rem;
+  padding: 5px 35px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  border-radius: 5px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+fieldset div {
+  margin: 0.75rem 0;
+}
+
+fieldset {
+  border: none;
+}
+
+input::placeholder {
+  text-transform: lowercase;
+  color: #ccc;
+}
+
+.container {
+  position: relative;
+}
+label{
+  position:absolute;
+  width:20px;
+  height:20px;
+  top:10px;
+  left:10px;
+}
+label[for="name"] {
+  background: url(/resourses/icons/user-name.png) no-repeat;
+  background-size: 20px 20px;
+}
+label[for="email"] {
+  background: url(/resourses/icons/email.png) no-repeat;
+  background-size: 20px 20px;
+}
+label[for="password"], label[for="password-confirm"] {
+  background: url(/resourses/icons/password.png) no-repeat;
+  background-size: 20px 20px;
+}
+
+input[type="submit"] {
+  background-color: #27dc95;
+  text-transform: uppercase;
+  font-family: Ubuntu, serif;
+  height: 35px;
+}
+
+button {
+  display: block;
+  margin: 0.75rem auto;
+  font-family: Ubuntu, serif;
+  background-color: #ff5c5c;
+  text-transform: uppercase;
+  height: 35px;
+}
